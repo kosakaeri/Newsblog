@@ -32,7 +32,7 @@
           <nav class="navbar navbar-expand-md navbar-darknavbar-laravel">
               <div class="container">
                   <a class="navbar-brand" href="{{ url ( '/' ) }}">
-                      {{ config('app.name', 'Laravel') }}
+                      {{ config('app.name', 'Newsblog') }}
                   </a>
                   <button class="navbar-toggler" type="button" deta-toggle="collapse" date-target="#navbarSupportedContent" aria-controls="navbarSuportedContent" aria-expanded="false" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                       <span class="navbar-toggler-icon"></span>
