@@ -43,7 +43,6 @@
                       <!-- Left Side Of Navbar -->
                       <ul class="navbar-nav mr-auto">
                         
-                        {{-- 以下を追記 --}}
                         <!-- Authentication Links -->
                         {{-- ログインしていなかったらログイン画面へのリンクを表示 --}}
                         @guest
@@ -56,19 +55,19 @@
                                 </a>
 
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="{{ route('logout') }}"
+                                  <a class="dropdown-item" href="{{ url ( 'admin/news/create' ) }}">新規投稿</a>
+                                  <a class="dropdown-item" href="{{ url ( 'admin/news/' ) }}">編集</a>
+                                  <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
                                         {{ __('Logout') }}
                                     </a>
-
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                                         @csrf
                                     </form>
                                 </div>
-                            </li>
-                            @endguest
-                            {{-- 以上までを追記 --}}
+                                </li>
+                        @endguest
                         </ul>
                         
                       
